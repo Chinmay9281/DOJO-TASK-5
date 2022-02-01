@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Stories Around Entertainment, Sports, And Culture</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://s4.scoopwhoop.com/v4/newdesignassets/sw_icons/favicon-32x32.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="stories.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <section id="navbar">
+        <!-- <img src="images/logo.png" alt="" class="navimage"> -->
+        <svg width="71" height="56" fill="none" xmlns="http://www.w3.org/2000/svg" class="navimage">
+            <path
+                d="M1.395 46l-.407-5.385c-.143-1.855-.284-3.712-.425-5.57-.118-1.543-.233-3.087-.346-4.63L0 27.524v-.201l4.511-.72c.198 4.538.392 9.065.582 13.58.158.03.204-.036.212-.183.109-2.095.22-4.189.336-6.281.13-2.434.264-4.868.403-7.303a.398.398 0 0 1 .016-.063l6.446-1.031.755 13.556.194-.015c.194-4.598.388-9.184.593-13.788l4.525-.726c-.029.417-.056.819-.085 1.22-.093 1.247-.186 2.494-.277 3.74-.108 1.436-.214 2.872-.319 4.308l-.271 3.702a2528.23 2528.23 0 0 1-.315 4.253c-.042.572-.087 1.146-.12 1.718 0 .144-.056.19-.194.21-1.94.307-3.88.617-5.821.932l-1.164.18L9.38 31.05l-.194.02-.664 13.783-1.467.237-5.084.803c-.16.026-.32.066-.48.098l-.096.01zM61 29.242c-.049.402-.086.79-.148 1.178-.049.28-.114.556-.194.827-.308 1.076-1.084 1.634-2.057 1.973-.762.233-1.542.398-2.332.494l-.551.09v3.522l-4.657.745V19.168l1.219-.2c1.626-.262 3.254-.521 4.884-.78a5.94 5.94 0 0 1 2.134-.02c.295.048.571.177.801.373.23.197.405.453.507.743.196.552.313 1.13.347 1.716 0 .093.023.185.035.28.01 2.653.013 5.308.012 7.962zm-5.272.572c.118-.018.22-.028.322-.05a.429.429 0 0 0 .304-.16.458.458 0 0 0 .101-.337v-6.328-.2a.342.342 0 0 0-.108-.278.317.317 0 0 0-.28-.074c-.114 0-.227.034-.345.052l.006 7.375zM23.828 23.503V31.2l.656-.102v-7.7l4.647-.745V41.54l-4.641.742V35.14l-.654.102v7.149l-4.657.744V24.247l4.649-.744zM31.999 12.24V6.896c0-.652.106-1.3.314-1.915.388-1.12 1.164-1.858 2.164-2.378a8.58 8.58 0 0 1 2.91-.84 6.354 6.354 0 0 1 2.205.051c1.371.311 2.134 1.176 2.303 2.63.048.387.072.778.074 1.17v10.138a6.582 6.582 0 0 1-.332 2.196c-.412 1.174-1.242 1.934-2.311 2.426a8.418 8.418 0 0 1-4.595.747c-.813-.097-1.552-.388-2.072-1.104a3.599 3.599 0 0 1-.61-1.806c-.033-.332-.04-.667-.042-1.004v-4.983l-.008.016zm5.32-.845V6.382a1.788 1.788 0 0 0 0-.227c-.017-.148-.05-.293-.227-.323a.33.33 0 0 0-.24.048.35.35 0 0 0-.148.203 1.567 1.567 0 0 0-.044.401V16.52a1.454 1.454 0 0 0 0 .227c.02.148.052.293.235.315.08.012.16-.006.228-.05a.346.346 0 0 0 .142-.193c.033-.122.049-.247.047-.373.006-1.69.009-3.376.007-5.058v.008zM21.37 13.894V8.549a5.614 5.614 0 0 1 .418-2.177c.44-1.05 1.237-1.726 2.213-2.184a8.665 8.665 0 0 1 4.462-.792c.31.033.615.1.91.2 1.095.348 1.66 1.17 1.854 2.292.072.416.11.838.112 1.26.008 3.444.008 6.887 0 10.328.01.722-.1 1.44-.328 2.121-.374 1.084-1.12 1.806-2.088 2.328a8.399 8.399 0 0 1-3.032.873 6.29 6.29 0 0 1-2.15-.068c-1.359-.315-2.102-1.132-2.296-2.569a9.031 9.031 0 0 1-.078-1.168c-.01-1.7 0-3.4 0-5.097l.002-.002zm5.318-.821V8.056a1.82 1.82 0 0 0 0-.23c-.017-.148-.05-.29-.227-.32a.332.332 0 0 0-.241.049.353.353 0 0 0-.147.204 1.58 1.58 0 0 0-.043.401v10.035a1.788 1.788 0 0 0 0 .226c.022.149.056.291.237.311a.325.325 0 0 0 .24-.058.346.346 0 0 0 .134-.213c.033-.121.048-.247.045-.373.004-1.67.005-3.341.002-5.015zM40.428 30.284V25.17a6.499 6.499 0 0 1 .318-2.142c.388-1.122 1.164-1.86 2.16-2.382a8.524 8.524 0 0 1 2.91-.843 6.355 6.355 0 0 1 2.205.05c1.358.305 2.134 1.17 2.309 2.623.047.388.072.779.073 1.17v10.157c.015.747-.099 1.49-.335 2.196-.41 1.158-1.229 1.914-2.284 2.408a8.413 8.413 0 0 1-4.643.765c-.813-.099-1.553-.402-2.069-1.112a3.634 3.634 0 0 1-.6-1.764 9.995 9.995 0 0 1-.044-.966c-.003-1.681-.003-3.363 0-5.045zm4.657-.759v5.006a2.2 2.2 0 0 0 0 .226c.017.155.044.31.236.334a.33.33 0 0 0 .249-.058.352.352 0 0 0 .14-.22 1.62 1.62 0 0 0 .035-.375V24.43a1.75 1.75 0 0 0 0-.227c-.018-.148-.049-.293-.227-.323a.329.329 0 0 0-.241.046.349.349 0 0 0-.148.203c-.03.122-.045.247-.042.373 0 1.677.001 3.351.004 5.023h-.006zM29.8 31.98v-5.345a5.648 5.648 0 0 1 .418-2.177c.438-1.05 1.236-1.726 2.214-2.183a8.666 8.666 0 0 1 4.462-.803c.31.033.616.1.912.2 1.093.348 1.66 1.168 1.854 2.29.073.423.11.851.112 1.28.008 3.43.008 6.86 0 10.29.012.728-.099 1.452-.328 2.14-.374 1.085-1.12 1.816-2.086 2.33a8.4 8.4 0 0 1-3.033.872 6.292 6.292 0 0 1-2.15-.066c-1.358-.317-2.103-1.134-2.297-2.569a9.016 9.016 0 0 1-.08-1.168v-5.097l.002.006zm5.319-.841v-5.003a2.2 2.2 0 0 0 0-.227c-.02-.148-.05-.293-.227-.323a.33.33 0 0 0-.24.047.35.35 0 0 0-.148.202 1.58 1.58 0 0 0-.043.401v10.035a1.788 1.788 0 0 0 0 .226c.022.149.055.291.235.313a.328.328 0 0 0 .23-.049.348.348 0 0 0 .143-.191c.031-.122.046-.248.044-.374.004-1.688.006-3.374.006-5.057zM47.293 15.718v3.514l-4.657.745V1.084L44.314.81C45.793.574 47.27.335 48.748.104a5.98 5.98 0 0 1 2.113-.02c.304.05.588.184.823.388.235.205.412.472.51.772.192.534.301 1.095.324 1.664.031.568.04 1.136.041 1.704v6.067a9.23 9.23 0 0 1-.281 2.304c-.107.446-.316.86-.61 1.204a2.768 2.768 0 0 1-1.078.778 9.043 9.043 0 0 1-2.265.588l-1.032.165zm0-11.355v7.365c.105-.016.194-.026.297-.044a.435.435 0 0 0 .323-.16.467.467 0 0 0 .106-.356V4.937c0-.636-.086-.71-.69-.602a.21.21 0 0 0-.03.028h-.006zM.221 19.802l4.463-.714V21.786c0 .171.054.316.245.346a.355.355 0 0 0 .246-.052.376.376 0 0 0 .155-.205c.03-.11.046-.223.045-.337v-2.065a.84.84 0 0 0-.121-.518.794.794 0 0 0-.405-.331c-.416-.147-.84-.268-1.269-.363a10.316 10.316 0 0 1-1.791-.602C.899 17.257.456 16.515.26 15.576a2.3 2.3 0 0 1-.054-.432c0-1.387-.126-2.781.083-4.16C.545 9.288 1.506 8.15 3.025 7.52a8.608 8.608 0 0 1 4.09-.65C8.627 7 9.625 7.983 9.82 9.565c.053.502.08 1.006.078 1.511.012.727 0 1.453 0 2.208l-4.467.72V11.48a1.759 1.759 0 0 0 0-.227c-.02-.143-.06-.275-.221-.313a.354.354 0 0 0-.226.034.371.371 0 0 0-.162.166c-.046.123-.07.254-.07.386v2.047a.905.905 0 0 0 .13.553c.1.164.252.29.429.356.29.117.59.209.896.273a12.05 12.05 0 0 1 2.084.638c.862.353 1.341 1.023 1.553 1.918.07.302.106.61.11.92.014.965.02 1.932 0 2.9-.021 1.095-.262 2.127-.931 3.01a4.752 4.752 0 0 1-2.367 1.606 8.757 8.757 0 0 1-3.353.49 4.516 4.516 0 0 1-1.13-.214C1.087 25.67.528 24.833.324 23.72a7.368 7.368 0 0 1-.11-1.187c-.002-.899.007-1.802.007-2.731zM15.985 16.998l4.641-.744c0 .06.014.106.014.154v3.033a5.606 5.606 0 0 1-.448 2.245c-.454 1.032-1.254 1.692-2.218 2.16a8.62 8.62 0 0 1-2.93.769c-.647.079-1.301.055-1.94-.07-1.37-.29-2.158-1.143-2.362-2.58a6.963 6.963 0 0 1-.078-.98v-10.67c-.007-.753.135-1.5.418-2.195.442-1.058 1.243-1.736 2.229-2.194a8.665 8.665 0 0 1 4.444-.788c.31.032.615.1.911.2 1.093.348 1.66 1.168 1.855 2.29.07.392.106.788.111 1.186.016.98 0 1.959 0 2.938v.15l-4.647.74V9.775a1.723 1.723 0 0 0 0-.247c-.021-.137-.064-.265-.223-.283a.305.305 0 0 0-.216.032.322.322 0 0 0-.143.168 1.43 1.43 0 0 0-.076.424V19.97c-.001.094.005.189.018.283.02.132.075.246.22.264a.292.292 0 0 0 .199-.028.306.306 0 0 0 .137-.15c.053-.133.081-.276.082-.42v-2.69l.002-.232z"
+                fill="#CFCFCF"></path>
+        </svg>
+        <div class="navlinks">
+            <ul>
+                <li class="navlinks-list">
+                    <a href="index.html">TRENDING</a>
+                </li>
+                <li class="navlinks-list">
+                    <a href="videos.html">VIDEOS</a>
+                </li>
+                <li class="navlinks-list">
+                    <a href="stories.html">STORIES</a>
+                </li>
+                <li class="navlinks-list">
+                    <a href="quizzes.html">QUIZZES</a>
+                </li>
+                <li class="navlinks-list">
+                    <a href="memes.html">MEMES</a>
+                </li>
+                <li class="navlinks-list">
+                    <a href="spotlight.html">SPOTLIGHT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbuttons">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="far fa-bookmark"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-bar" onclick="openMenuBar()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menuBar" onclick="openMenuBar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="responsive-navbar">
+            <div class="responsive-ul">
+                <div class="responsive-navlinks-list">
+                    <a href="index.html" class="responsive-links">
+                        <span class="icon-bottom">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.5 12.5104H5.08895V19.6014L15.0973 7.09103H10.5083V0L0.5 12.5104ZM6.89541 10.7039H4.25855L8.70186 5.1498V8.89749H11.3387L6.89541 14.4516V10.7039Z"
+                                    fill="#999696"></path>
+                            </svg>
+                        </span>
+                        TRENDING
+                    </a>
+                </div>
+                <div class="responsive-navlinks-list">
+                    <a href="videos.html" class="responsive-links">
+                        <span class="icon-bottom">
+                            <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.5 0.904703V17.1628C0.5 17.8774 1.29054 18.309 1.89165 17.9225L14.5368 9.79351C15.0899 9.43797 15.0899 8.6295 14.5368 8.27396L1.89165 0.144929C1.29054 -0.241497 0.5 0.190102 0.5 0.904703ZM12.3781 9.03375L2.30645 15.5084V2.55912L12.3781 9.03375Z"
+                                    fill="#999696"></path>
+                            </svg> </span>
+                        VIDEOS
+                    </a>
+                </div>
+                <div class="responsive-navlinks-list">
+                    <a href="stories.html" class="responsive-links">
+                        <span class="icon-bottom">
+                            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 1.71429V0H0.5V1.71429H7.5Z" fill="#999696"></path>
+                                <path d="M10.3 6.85714V5.14286H0.5V6.85714H10.3Z" fill="#999696"></path>
+                                <path d="M14.5 12V10.2857H0.5V12H14.5Z" fill="#999696"></path>
+                                <path d="M14.5 5.14286V6.85714H11V5.14286H14.5Z" fill="#999696"></path>
+                            </svg> </span>
+                        STORIES
+                    </a>
+                </div>
+                <div class="responsive-navlinks-list">
+                    <a href="quizzes.html" class="responsive-links">
+                        <span class="icon-bottom">
+                            <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.85 13.3333V12.4409C11.536 12.2045 12.9939 11.2751 13.9141 9.95654C16.2211 9.64489 17.5 7.6857 17.5 5V2.5C17.5 1.57953 16.7389 0.833333 15.8 0.833333H14.7226C14.4286 0.335165 13.8792 0 13.25 0H4.75C4.12076 0 3.57137 0.335165 3.27743 0.833333H2.2C1.26112 0.833333 0.5 1.57953 0.5 2.5V5C0.5 7.6857 1.7789 9.64489 4.08586 9.95654C5.00605 11.2751 6.46403 12.2045 8.15 12.4409V13.3333H7.3C6.36112 13.3333 5.6 14.0795 5.6 15H12.4C12.4 14.0795 11.6389 13.3333 10.7 13.3333H9.85ZM2.2 2.5H3.05V6.66667C3.05 7.04813 3.08735 7.42104 3.15865 7.78207C2.53173 7.22887 2.2 6.27605 2.2 5V2.5ZM14.95 2.5V6.66667C14.95 7.04813 14.9127 7.42104 14.8413 7.78207C15.4683 7.22887 15.8 6.27605 15.8 5V2.5H14.95ZM4.75 6.66667V1.66667H13.25V6.66667C13.25 8.96785 11.3472 10.8333 9 10.8333C6.65279 10.8333 4.75 8.96785 4.75 6.66667Z"
+                                    fill="#999696"></path>
+                            </svg> </span>
+                        QUIZZES
+                    </a>
+                </div>
+                <div class="responsive-navlinks-list">
+                    <a href="memes.html" class="responsive-links">
+                        <span class="icon-bottom">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.5292 16.3636C7.4769 16.3636 5.77857 14.756 5.77857 11.8182V10.9091H15.1507L15.1759 11.7923C15.2598 14.7404 13.5912 16.3636 10.5292 16.3636ZM13.3069 12.7273C13.0933 13.9959 12.2354 14.5455 10.5292 14.5455C8.82388 14.5455 7.93799 13.9911 7.67888 12.7273H13.3069Z"
+                                    fill="#999696"></path>
+                                <path d="M12.3182 6.36364H15.0455V8.18182H12.3182V6.36364Z" fill="#999696"></path>
+                                <path d="M8.68182 6.36364H5.95455V8.18182H8.68182V6.36364Z" fill="#999696"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.5 10C0.5 15.5228 4.97715 20 10.5 20C16.0228 20 20.5 15.5228 20.5 10C20.5 4.47715 16.0228 0 10.5 0C4.97715 0 0.5 4.47715 0.5 10ZM18.6818 10C18.6818 14.5187 15.0187 18.1818 10.5 18.1818C5.98131 18.1818 2.31818 14.5187 2.31818 10C2.31818 5.48131 5.98131 1.81818 10.5 1.81818C15.0187 1.81818 18.6818 5.48131 18.6818 10Z"
+                                    fill="#999696"></path>
+                            </svg>
+                        </span>
+                        MEMES
+                    </a>
+                </div>
+                <div class="responsive-navlinks-list">
+                    <a href="spotlight.html" class="responsive-links">
+                        <span class="icon-bottom">
+                            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 1.71429V0H0.5V1.71429H7.5Z" fill="#999696"></path>
+                                <path d="M10.3 6.85714V5.14286H0.5V6.85714H10.3Z" fill="#999696"></path>
+                                <path d="M14.5 12V10.2857H0.5V12H14.5Z" fill="#999696"></path>
+                                <path d="M14.5 5.14286V6.85714H11V5.14286H14.5Z" fill="#999696"></path>
+                            </svg> </span>
+                        SPOTLIGHT
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Menu">
+        <div class="close-menu" onclick="closeMenuBar()">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="Menu-body">
+            <div class="categories-section">
+                <p>CATEGORIES</p>
+                <div class="categories">
+                    <ul class="menu-items" role="menu">
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/news/?ref=nav_links"> Viral </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/entertainment/?ref=nav_links"> Entertainment
+                            </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/humor/?ref=nav_links"> Humor </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/opinion/?ref=nav_links"> Opinion </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/food/?ref=nav_links"> Food </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/travel/?ref=nav_links"> Travel </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/women/?ref=nav_links"> Women </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/lgbt/?ref=nav_links"> LGBTQIA </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/animals/?ref=nav_links"> Animals </a> </li>
+                        <li role="menuitem" class="menu-item"> <a
+                                href="https://www.scoopwhoop.com/category/relationships/?ref=nav_links"> Sex &amp;
+                                Relationships
+                            </a> </li>
+                        <li role="menuitem" class="menu-item"> <a href="/category/culture/?ref=nav_links"> Culture </a>
+                        </li>
+                        <li role="menuitem" class="menu-item"> <a href="/category/sports/?ref=nav_links"> Sports </a>
+                        </li>
+                        <li role="menuitem" class="menu-item"> <a href="/category/tech/?ref=nav_links"> Tech </a> </li>
+                        <li role="menuitem" class="menu-item"> <a href="/category/men/?ref=nav_links"> Men </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="channel-section">
+                <p class="channel-head"> <span class="head-text">Our channels</span><span class="head-line"></span>
+                </p>
+                <div class="channel-body our-channel">
+                    <div> <a href="https://hindi.scoopwhoop.com/?ref=scoopwhoop&amp;utm_source=scoopwhoop&amp;utm_medium=desktop"
+                            rel="noreferrer" target="_blank">
+                            <figure class="channel-hindi"> <img loading="lazy" class=" lazyloaded" width="80" height="80"
+                                    data-src="https://s4.scoopwhoop.com/v4/newdesignassets/static/sw/newDesign/desktop/images/scoopwhoop_new.png"
+                                    alt="ScoopWhoop Hindi"
+                                    src="https://s4.scoopwhoop.com/v4/newdesignassets/static/sw/newDesign/desktop/images/scoopwhoop_new.png">
+                            </figure>
+                        </a> </div>
+                    <div> <a href="https://www.youtube.com/channel/UC7lmZqhJeTzeQQkqNvfmjqw" rel="noreferrer"
+                            target="_blank">
+                            <figure class="channel-oktested"> <img loading="lazy" class=" lazyloaded" width="80" height="80"
+                                    data-src="https://s4.scoopwhoop.com/v4/newdesignassets/static/sw/newDesign/desktop/images/oktested_new.png"
+                                    alt="OK Tested"
+                                    src="https://s4.scoopwhoop.com/v4/newdesignassets/static/sw/newDesign/desktop/images/oktested_new.png">
+                            </figure>
+                        </a> </div>
+                    <div> <a href="https://www.youtube.com/user/scoopwhoopvideos" rel="noreferrer" target="_blank">
+                            <figure class="channel-unscripted"> <img loading="lazy" class=" lazyloaded" width="80"
+                                    height="80"
+                                    data-src="https://s4.scoopwhoop.com/v4/newdesignassets/static/sw/newDesign/desktop/images/sketches_new.png"
+                                    alt="Sketches"
+                                    src="https://s4.scoopwhoop.com/v4/newdesignassets/static/sw/newDesign/desktop/images/sketches_new.png">
+                            </figure>
+                        </a> </div>
+                    <div> <a href="https://www.vagabomb.com/?ref=scoopwhoop&amp;utm_source=scoopwhoop&amp;utm_medium=desktop"
+                            rel="noreferrer" target="_blank">
+                            <figure class="channel-vagabomb"> <img loading="lazy" class=" lazyloaded" width="80" height="80"
+                                    data-src="https://s4.scoopwhoop.com/v4/newdesignassets/static/sw/newDesign/desktop/images/vagabomb_new.png"
+                                    alt="Vagabomb"
+                                    src="https://s4.scoopwhoop.com/v4/newdesignassets/static/sw/newDesign/desktop/images/vagabomb_new.png">
+                            </figure>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://s4.scoopwhoop.com/anj2/61f38fa1c84a5000018ca3f1/ae4b8b4f-be6b-4f0b-a14c-38e11f695ded.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a
+                            href="https://www.scoopwhoop.com/entertainment/shark-tank-india-scenes-with-roadies-dialogues/?ref=read_masthead">These
+                            Shark Tank India Scenes With Roadies Dialogues Prove That It's Actually Just 'Techie
+                            Roadies'</a>
+                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="https://s3.scoopwhoop.com/anj2/61f38fa1c84a5000018ca3f1/f1db4daa-67b4-4bc5-a9f0-c28a75aa29cb.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a
+                            href="https://www.scoopwhoop.com/entertainment/educational-qualifications-of-shark-tank-india-judges/?ref=read_masthead">From
+                            Ashneer Grover to Namita Thapar, Here Are The Educational Qualifications Of Shark Tank
+                            India's Judges</a>
+                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://s4.scoopwhoop.com/anj2/61f38fa1c84a5000018ca3f1/77b44ad2-f75c-43b6-980b-835ca0cebcfa.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a
+                            href="https://www.scoopwhoop.com/entertainment/anushka-sharma-deepika-padukone-married-women-asked-ridiculous-questions/?ref=read_masthead">10
+                            Times Married Women Were Asked Ridiculous Questions</a>
+                        <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="stories">
+        <div class="stories-div">
+            <svg width="20" height="20" fill="none" class="stripes">
+                <path fill="#1B91FF"
+                    d="M5.5 1.286V0H0v1.286h5.5zM7.7 5.143V3.857H0v1.286h7.7zM11 9V7.714H0V9h11zM11 3.857v1.286H8.25V3.857H11z">
+                </path>
+            </svg>
+            <p>STORIES</p>
+            <span class="border-span"></span>
+        </div>
+        <div class="card-stories">
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s3.scoopwhoop.com/anj2/61f38e1fa9086f0001b25329/d43bebbb-fe06-4ac3-8e9a-06b1ff07887c.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/entertainment/samantha-to-rashmika-highest-paid-south-indian-actresses/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/samantha-to-rashmika-highest-paid-south-indian-actresses/?ref=home_read">From
+                        Samantha Ruth Prabhu To Rashmika, Here Are 12 Of The Highest-Paid South Indian Actresses
+                    </a>
+                    <a href="https://www.scoopwhoop.com/author/prakriti-srivastava/?ref=home_read"
+                        class="article-author">Prakriti Srivastava</a>
+                    <div class="base-box">
+                        <div class="base-left">
+                            <div class="article-date-share"> <span class="timeago" data-date="January 29, 2022 13:14:39">2
+                                    hours ago</span>
+                                | <time> 5 min read </time> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s3.scoopwhoop.com/anj2/61f4da9ea9086f0001b25a71/0c497592-5f21-42f5-9666-c0d1e7c1b2cc.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/entertainment/kapil-sharma-im-not-done-yet-twitter-review/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/kapil-sharma-im-not-done-yet-twitter-review/?ref=home_read">15
+                        Tweets To Read Before Watching Netflix's 'Kapil Sharma: I'm Not Done Yet'
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f3e46c440a410001801a61/52513e00-351e-49a9-8e62-24b7841ef95d.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/news/influencer-called-out-for-copying-jo-malone-perfumes/?ref=home_read">VIRAL</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/news/influencer-called-out-for-copying-jo-malone-perfumes/?ref=home_read">People
+                        are Calling Out This Influencer For Copying A Perfume & Passing It Off As Coincidence
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61d85796a9086f0001b1fb48/09929fa0-ddd4-4b31-beba-19699c01e0c2.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/originals/5000-at-h-a-vs-5000-at-forever-21/?ref=home_read">FASHOIN</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/originals/5000-at-h-a-vs-5000-at-forever-21/?ref=home_read">₹5000
+                        At H&M Vs ₹5000 At Forever 21
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f3c039a9086f0001b256db/1e3fdd82-b1e3-47d6-81d9-06a81c3765ab.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/entertainment/vidya-balan-ishqiya-changed-narrative-in-bollywood/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/vidya-balan-ishqiya-changed-narrative-in-bollywood/?ref=home_read">How
+                        'Ishqiya' Changed The 'Bechari' Woman Narrative In Bollywood
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s3.scoopwhoop.com/anj2/61efb484a9086f0001b246de/16d305e1-284d-413b-bd52-d55f5bddf58b.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/humor/reasons-namita-thapar-gave-on-shark-tank-india/?ref=home_read">HUMOR</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/humor/reasons-namita-thapar-gave-on-shark-tank-india/?ref=home_read">10
+                        Reasons Namita Thapar Gave On Shark Tank India For "Main Out Hoon"
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61ef9970440a41000180072d/b956f1f7-b274-43eb-9d97-aa3cc0de188c.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/entertainment/pitch-on-shark-tank-quiz/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/pitch-on-shark-tank-quiz/?ref=home_read">Accepted
+                        Or Rejected: Pitch An Idea On Shark Tank & We'll Tell You How The Judges Will React
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f3b61c440a410001801773/819e593f-de40-4052-a476-946339da30b0.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/entertainment/products-for-women-on-shark-tank-india/?ref=home_read">WOMEN</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/products-for-women-on-shark-tank-india/?ref=home_read">12
+                        Futuristic Products Women Need. Can Someone Pitch These On Shark Tank India Already?
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f39c2e440a410001801575/6ebdd95c-8f0e-46a4-a199-e4f925946fc0.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a
+                            href="https://www.scoopwhoop.com/travel/things-normal-in-mumbai-but-weird-everywhere-else/?ref=home_read">TRAVEL</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/travel/things-normal-in-mumbai-but-weird-everywhere-else/?ref=home_read">15
+                        People Reveal Things That Are Totally Normal In Mumbai But Alien Everywhere Else
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61ef979aa9086f0001b24540/bdfd28a3-5cae-402d-8386-8b400129bfae.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/food/?ref=home_read">FOOD</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/food/im-bengali-and-i-hate-fish/?ref=home_read">I'm Bengali And
+                        I Hate Fish. Yes, We Exist.
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f39448c84a5000018ca432/f88b13b6-edf8-499f-a8db-c0b8183dc6b6.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/entertainment/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/samantha-ruth-prabhu-highest-rated-films-imdb/?ref=home_read">Here's
+                        A List Of Samantha Ruth Prabhu's 10 Highest Rated Films, According To IMDb
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f23de0a9086f0001b24bf3/533a8934-7870-4ceb-9a15-3daffc6368f2.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/entertainment/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/times-bollywood-celebs-openly-spoke-about-periods/?ref=home_read">10
+                        Times Bollywood Celebs Openly Spoke About Periods
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s3.scoopwhoop.com/anj2/61f3a9c3440a41000180167a/3dc9268b-2539-4cd5-96c6-a5136f8bd0bf.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/entertainment/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/gopi-bahu-savage-burn-scene/?ref=home_read">Watch:
+                        Gopi Bahu
+                        Is Outta The Rasoda And Serving Savage Burns
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61d462670af5fb0001b9a4fe/dbe17951-a7b0-4f96-a34e-13e4894ed8ee.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/show/broadies/?ref=home_read">FOR THE FIRST TIME</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/originals/model-vs-me-clothes-from-sarojini-nagar/?ref=home_read">Model
+                        Vs Me: Clothes From Sarojini Nagar
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f38ea9440a4100018014a5/0677af51-7b12-45e5-b21c-1c1522b2ddf7.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/entertainment/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/redditors-reveal-their-embarassing-celebrity-encounters/?ref=home_read">From
+                        Kareena Kapoor To Emma Watson, Redditors Reveal Their Embarassing Celebrity Encounters
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s3.scoopwhoop.com/anj2/61f3a7bc440a410001801659/e03302c0-edb6-4679-bac4-521f83ebd8db.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/entertainment/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/nawazuddin-siddique-builds-house-mumbai-names-it-nawab/?ref=home_read">In
+                        Pics: Here's A First Look At Nawazuddin Siddiqui's Dreamy House 'Nawab' In Mumbai
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61ee82d5a9086f0001b2425b/87f2ee49-749d-48f6-be3f-153c92dff00e.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/entertainment/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/quiz-how-much-money-will-you-make-in-shark-tank-india/?ref=home_read">Take
+                        This Quiz And We'll Tell You How Much Money You'll Raise In Shark Tank India
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f38c18440a410001801480/61c10d72-68dd-411b-bedf-cedbb6597475.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/travel/?ref=home_read">TRAVEL</a>
+                    </p>
+                    <a class="card-text" href="https://www.scoopwhoop.com/travel/air-india-facts/?ref=home_read">10
+                        Surprising Facts About Air India We Bet You Didn't Know
+                    </a>
+                    <a href="https://www.scoopwhoop.com/author/priya-hazra/?ref=home_read" class="article-author">Priya
+                        Hazra</a>
+                    <div class="base-box">
+                        <div class="base-left">
+                            <div class="article-date-share"> <span class="timeago" data-date="January 28, 2022 14:52:51">1
+                                    day
+                                    ago</span> | <time> 4 min read </time> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s3.scoopwhoop.com/anj2/61f394fb440a410001801501/643194e0-b831-4c93-b0de-ef5a9b44675a.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/entertainment/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/gangubai-kathiawadi-gehraiyaan-bollywood-movies-releasing-in-february/?ref=home_read">6
+                        Movie Releases That Show February Might Just Be A Good Month For Bollywood
+                    </a>
+                    <a href="https://www.scoopwhoop.com/author/aaliyah-jain/?ref=home_read" class="article-author">Aaliyah
+                        Jain</a>
+                    <div class="base-box">
+                        <div class="base-left">
+                            <div class="article-date-share"> <span class="timeago" data-date="January 28, 2022 14:16:50">1
+                                    day
+                                    ago</span> | <time> 3 min read </time> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f3a3a3a9086f0001b254b7/d7196e5c-4ec1-4a4f-86f5-e26b93a410aa.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/entertainment/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/dabboo-ratnani-instagram-influencers-calendar/?ref=home_read">Dabboo
+                        Ratnani's Latest Calendar Features Instagram's Most-Loved Influencers
+                    </a>
+                    <a href="https://www.scoopwhoop.com/author/akanksha-bhatia/?ref=home_read"
+                        class="article-author">Akanksha Bhatia</a>
+                    <div class="base-box">
+                        <div class="base-left">
+                            <div class="article-date-share"> <span class="timeago" data-date="January 28, 2022 14:08:44">1
+                                    day
+                                    ago</span> | <time> 2 min read </time> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s3.scoopwhoop.com/anj2/61cd832c5ed7ea0001e28e53/776d2f72-a498-4f75-917f-56db01d41a90.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/show/broadies/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/originals/model-vs-me-dresses-from-zara/?ref=home_read">Model
+                        Vs Me: Dresses From Zara
+                    </a>
+                    <div class="base-box">
+                        <div class="base-left">
+                            <div class="article-date-share"> <span class="timeago" data-date="December 30, 2021 15:46:19">1
+                                    month
+                                    ago</span> | <time> 13:55 min </time> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61f3844ea9086f0001b252be/b6bd1c46-d839-4c83-8843-4641d078ba9f.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/show/broadies/?ref=home_read">WOMEN</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/women/shaheena-attarwala-mumbai-slums-to-microsoft/?ref=home_read">From
+                        Living In Mumbai Slums To Working For Microsoft, This Is Shaheena Attarwala's Inspiring Story
+                    </a>
+                    <a href="https://www.scoopwhoop.com/author/anjali-awasthi/?ref=home_read" class="article-author">Anjali
+                        Awasthi</a>
+                    <div class="base-box">
+                        <div class="base-left">
+                            <div class="article-date-share"> <span class="timeago" data-date="January 28, 2022 14:04:38">1
+                                    day
+                                    ago</span> | <time> 3 min read </time> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61efe256c84a5000018c99c6/a01e4b40-be9b-4f51-b5a5-c707f50fa1b2.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/show/broadies/?ref=home_read">ENTERTAINMENT</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/entertainment/interesting-shark-tank-india-pitches/?ref=home_read">From
+                        Revamp Moto To Spandan, 9 Of The Most Interesting Shark Tank India Pitches
+                    </a>
+                    <a href="https://www.scoopwhoop.com/author/prakriti-srivastava/?ref=home_read"
+                        class="article-author">Prakriti Srivastava</a>
+                    <div class="base-box">
+                        <div class="base-left">
+                            <div class="article-date-share"> <span class="timeago" data-date="January 28, 2022 13:23:41">1
+                                    day
+                                    ago</span> | <time> 5 min read </time> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.scoopwhoop.com/w245/s4.scoopwhoop.com/anj2/61efade1440a410001800847/2b8f8b9a-b52e-4082-ae40-3b759f6ecbef.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-para">
+                        <a href="https://www.scoopwhoop.com/category/news/?ref=home_read">VIRAL</a>
+                    </p>
+                    <a class="card-text"
+                        href="https://www.scoopwhoop.com/news/republic-day-knowledge-quiz/?ref=home_read">How Well Do
+                        You Know Your Country? Test Your Republic Day Knowledge With This Quiz
+                    </a>
+                    <a href="https://www.scoopwhoop.com/author/akanksha-bhatia/?ref=home_read"
+                        class="article-author">Akanksha Bhatia</a>
+                    <div class="base-box">
+                        <div class="base-left">
+                            <div class="article-date-share"> <span class="timeago" data-date="January 25, 2022 17:29:09">3
+                                    days
+                                    ago</span> | <time> 3 min read </time> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-logo">
+            <a href="https://www.scoopwhoop.com/?ref=footer_logo" class="svg-img">
+                <svg width="61" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.395 46l-.407-5.385c-.143-1.855-.284-3.712-.425-5.57-.118-1.543-.233-3.087-.346-4.63L0 27.524v-.201l4.511-.72c.198 4.538.392 9.065.582 13.58.158.03.204-.036.212-.183.109-2.095.22-4.189.336-6.281.13-2.434.264-4.868.403-7.303a.398.398 0 0 1 .016-.063l6.446-1.031.755 13.556.194-.015c.194-4.598.388-9.184.593-13.788l4.525-.726c-.029.417-.056.819-.085 1.22-.093 1.247-.186 2.494-.277 3.74-.108 1.436-.214 2.872-.319 4.308l-.271 3.702a2528.23 2528.23 0 0 1-.315 4.253c-.042.572-.087 1.146-.12 1.718 0 .144-.056.19-.194.21-1.94.307-3.88.617-5.821.932l-1.164.18L9.38 31.05l-.194.02-.664 13.783-1.467.237-5.084.803c-.16.026-.32.066-.48.098l-.096.01zM61 29.242c-.049.402-.086.79-.148 1.178-.049.28-.114.556-.194.827-.308 1.076-1.084 1.634-2.057 1.973-.762.233-1.542.398-2.332.494l-.551.09v3.522l-4.657.745V19.168l1.219-.2c1.626-.262 3.254-.521 4.884-.78a5.94 5.94 0 0 1 2.134-.02c.295.048.571.177.801.373.23.197.405.453.507.743.196.552.313 1.13.347 1.716 0 .093.023.185.035.28.01 2.653.013 5.308.012 7.962zm-5.272.572c.118-.018.22-.028.322-.05a.429.429 0 0 0 .304-.16.458.458 0 0 0 .101-.337v-6.328-.2a.342.342 0 0 0-.108-.278.317.317 0 0 0-.28-.074c-.114 0-.227.034-.345.052l.006 7.375zM23.828 23.503V31.2l.656-.102v-7.7l4.647-.745V41.54l-4.641.742V35.14l-.654.102v7.149l-4.657.744V24.247l4.649-.744zM31.999 12.24V6.896c0-.652.106-1.3.314-1.915.388-1.12 1.164-1.858 2.164-2.378a8.58 8.58 0 0 1 2.91-.84 6.354 6.354 0 0 1 2.205.051c1.371.311 2.134 1.176 2.303 2.63.048.387.072.778.074 1.17v10.138a6.582 6.582 0 0 1-.332 2.196c-.412 1.174-1.242 1.934-2.311 2.426a8.418 8.418 0 0 1-4.595.747c-.813-.097-1.552-.388-2.072-1.104a3.599 3.599 0 0 1-.61-1.806c-.033-.332-.04-.667-.042-1.004v-4.983l-.008.016zm5.32-.845V6.382a1.788 1.788 0 0 0 0-.227c-.017-.148-.05-.293-.227-.323a.33.33 0 0 0-.24.048.35.35 0 0 0-.148.203 1.567 1.567 0 0 0-.044.401V16.52a1.454 1.454 0 0 0 0 .227c.02.148.052.293.235.315.08.012.16-.006.228-.05a.346.346 0 0 0 .142-.193c.033-.122.049-.247.047-.373.006-1.69.009-3.376.007-5.058v.008zM21.37 13.894V8.549a5.614 5.614 0 0 1 .418-2.177c.44-1.05 1.237-1.726 2.213-2.184a8.665 8.665 0 0 1 4.462-.792c.31.033.615.1.91.2 1.095.348 1.66 1.17 1.854 2.292.072.416.11.838.112 1.26.008 3.444.008 6.887 0 10.328.01.722-.1 1.44-.328 2.121-.374 1.084-1.12 1.806-2.088 2.328a8.399 8.399 0 0 1-3.032.873 6.29 6.29 0 0 1-2.15-.068c-1.359-.315-2.102-1.132-2.296-2.569a9.031 9.031 0 0 1-.078-1.168c-.01-1.7 0-3.4 0-5.097l.002-.002zm5.318-.821V8.056a1.82 1.82 0 0 0 0-.23c-.017-.148-.05-.29-.227-.32a.332.332 0 0 0-.241.049.353.353 0 0 0-.147.204 1.58 1.58 0 0 0-.043.401v10.035a1.788 1.788 0 0 0 0 .226c.022.149.056.291.237.311a.325.325 0 0 0 .24-.058.346.346 0 0 0 .134-.213c.033-.121.048-.247.045-.373.004-1.67.005-3.341.002-5.015zM40.428 30.284V25.17a6.499 6.499 0 0 1 .318-2.142c.388-1.122 1.164-1.86 2.16-2.382a8.524 8.524 0 0 1 2.91-.843 6.355 6.355 0 0 1 2.205.05c1.358.305 2.134 1.17 2.309 2.623.047.388.072.779.073 1.17v10.157c.015.747-.099 1.49-.335 2.196-.41 1.158-1.229 1.914-2.284 2.408a8.413 8.413 0 0 1-4.643.765c-.813-.099-1.553-.402-2.069-1.112a3.634 3.634 0 0 1-.6-1.764 9.995 9.995 0 0 1-.044-.966c-.003-1.681-.003-3.363 0-5.045zm4.657-.759v5.006a2.2 2.2 0 0 0 0 .226c.017.155.044.31.236.334a.33.33 0 0 0 .249-.058.352.352 0 0 0 .14-.22 1.62 1.62 0 0 0 .035-.375V24.43a1.75 1.75 0 0 0 0-.227c-.018-.148-.049-.293-.227-.323a.329.329 0 0 0-.241.046.349.349 0 0 0-.148.203c-.03.122-.045.247-.042.373 0 1.677.001 3.351.004 5.023h-.006zM29.8 31.98v-5.345a5.648 5.648 0 0 1 .418-2.177c.438-1.05 1.236-1.726 2.214-2.183a8.666 8.666 0 0 1 4.462-.803c.31.033.616.1.912.2 1.093.348 1.66 1.168 1.854 2.29.073.423.11.851.112 1.28.008 3.43.008 6.86 0 10.29.012.728-.099 1.452-.328 2.14-.374 1.085-1.12 1.816-2.086 2.33a8.4 8.4 0 0 1-3.033.872 6.292 6.292 0 0 1-2.15-.066c-1.358-.317-2.103-1.134-2.297-2.569a9.016 9.016 0 0 1-.08-1.168v-5.097l.002.006zm5.319-.841v-5.003a2.2 2.2 0 0 0 0-.227c-.02-.148-.05-.293-.227-.323a.33.33 0 0 0-.24.047.35.35 0 0 0-.148.202 1.58 1.58 0 0 0-.043.401v10.035a1.788 1.788 0 0 0 0 .226c.022.149.055.291.235.313a.328.328 0 0 0 .23-.049.348.348 0 0 0 .143-.191c.031-.122.046-.248.044-.374.004-1.688.006-3.374.006-5.057zM47.293 15.718v3.514l-4.657.745V1.084L44.314.81C45.793.574 47.27.335 48.748.104a5.98 5.98 0 0 1 2.113-.02c.304.05.588.184.823.388.235.205.412.472.51.772.192.534.301 1.095.324 1.664.031.568.04 1.136.041 1.704v6.067a9.23 9.23 0 0 1-.281 2.304c-.107.446-.316.86-.61 1.204a2.768 2.768 0 0 1-1.078.778 9.043 9.043 0 0 1-2.265.588l-1.032.165zm0-11.355v7.365c.105-.016.194-.026.297-.044a.435.435 0 0 0 .323-.16.467.467 0 0 0 .106-.356V4.937c0-.636-.086-.71-.69-.602a.21.21 0 0 0-.03.028h-.006zM.221 19.802l4.463-.714V21.786c0 .171.054.316.245.346a.355.355 0 0 0 .246-.052.376.376 0 0 0 .155-.205c.03-.11.046-.223.045-.337v-2.065a.84.84 0 0 0-.121-.518.794.794 0 0 0-.405-.331c-.416-.147-.84-.268-1.269-.363a10.316 10.316 0 0 1-1.791-.602C.899 17.257.456 16.515.26 15.576a2.3 2.3 0 0 1-.054-.432c0-1.387-.126-2.781.083-4.16C.545 9.288 1.506 8.15 3.025 7.52a8.608 8.608 0 0 1 4.09-.65C8.627 7 9.625 7.983 9.82 9.565c.053.502.08 1.006.078 1.511.012.727 0 1.453 0 2.208l-4.467.72V11.48a1.759 1.759 0 0 0 0-.227c-.02-.143-.06-.275-.221-.313a.354.354 0 0 0-.226.034.371.371 0 0 0-.162.166c-.046.123-.07.254-.07.386v2.047a.905.905 0 0 0 .13.553c.1.164.252.29.429.356.29.117.59.209.896.273a12.05 12.05 0 0 1 2.084.638c.862.353 1.341 1.023 1.553 1.918.07.302.106.61.11.92.014.965.02 1.932 0 2.9-.021 1.095-.262 2.127-.931 3.01a4.752 4.752 0 0 1-2.367 1.606 8.757 8.757 0 0 1-3.353.49 4.516 4.516 0 0 1-1.13-.214C1.087 25.67.528 24.833.324 23.72a7.368 7.368 0 0 1-.11-1.187c-.002-.899.007-1.802.007-2.731zM15.985 16.998l4.641-.744c0 .06.014.106.014.154v3.033a5.606 5.606 0 0 1-.448 2.245c-.454 1.032-1.254 1.692-2.218 2.16a8.62 8.62 0 0 1-2.93.769c-.647.079-1.301.055-1.94-.07-1.37-.29-2.158-1.143-2.362-2.58a6.963 6.963 0 0 1-.078-.98v-10.67c-.007-.753.135-1.5.418-2.195.442-1.058 1.243-1.736 2.229-2.194a8.665 8.665 0 0 1 4.444-.788c.31.032.615.1.911.2 1.093.348 1.66 1.168 1.855 2.29.07.392.106.788.111 1.186.016.98 0 1.959 0 2.938v.15l-4.647.74V9.775a1.723 1.723 0 0 0 0-.247c-.021-.137-.064-.265-.223-.283a.305.305 0 0 0-.216.032.322.322 0 0 0-.143.168 1.43 1.43 0 0 0-.076.424V19.97c-.001.094.005.189.018.283.02.132.075.246.22.264a.292.292 0 0 0 .199-.028.306.306 0 0 0 .137-.15c.053-.133.081-.276.082-.42v-2.69l.002-.232z"
+                        fill="#CFCFCF"></path>
+                </svg>
+                <span class="span-text">ScoopWhoop Media Pvt Ltd.</span>
+            </a>
+        </div>
+        <div>
+            <h5 class="footer-link">Follow us</h5>
+            <div class="social-links">
+                <a class="facebook" aria-label="scoopwhoop facebook" rel="noopener"
+                    href="https://www.facebook.com/Scoopwhoop/" target="_blank">
+                    <svg width="18" height="18" fill="none">
+                        <path fill="#A1A3A5"
+                            d="M7.98 9.361h1.604v5.15h1.718v-5.15h1.703V7.643h-1.703V6.78c0-.474.385-.859.86-.859h.858V4.203h-.859A2.577 2.577 0 0 0 9.584 6.78v.863H7.981v1.718z">
+                        </path>
+                        <path class="border" fill="#A1A3A5" fill-rule="evenodd"
+                            d="M1.854.768h13.743c.949 0 1.718.769 1.718 1.718v13.743c0 .949-.769 1.718-1.718 1.718H1.854c-.95 0-1.718-.77-1.718-1.718V2.486c0-.95.769-1.718 1.718-1.718zm0 1.718v13.743h13.743V2.486H1.854z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </a>
+                <a class="twitter" aria-label="scoopwhoop twitter" rel="noopener" href="https://twitter.com/scoopwhoop"
+                    target="_blank">
+                    <svg width="18" height="18" fill="none">
+                        <path class="border" fill="#A1A3A5" fill-rule="evenodd"
+                            d="M16.657 3.034l1.216.14-.547 1.09-.8 1.593a1.258 1.258 0 0 1-.17.34c-.034.053-.151.224-.157.232a1.788 1.788 0 0 0-.07.112v2.041c0 5.224-5.082 8.543-9.881 8.543-.982 0-1.728-.047-2.583-.233-1.406-.305-2.452-.912-2.93-1.972L.24 13.83l1.198-.11c1.084-.099 2.024-.304 2.745-.58-1.98-.316-3.09-1.182-3.09-2.807v-.854h.858c.189 0 .36-.016.511-.044C.977 8.55.232 7.132.232 5.164v-.173c-.006-.992.047-1.522.32-2.198.175-.434.428-.835.768-1.202l.648-.7.63.716C4.677 3.967 6.73 5.4 8.827 5.574c.009-2.18 1.664-3.828 3.866-3.828a3.84 3.84 0 0 1 2.69 1.086c.4.082.825.15 1.275.202zm-1.9 1.413l-.263-.06-.181-.198c-.44-.48-.992-.734-1.62-.734-1.258 0-2.149.891-2.149 2.137 0 .203-.005.331-.03.5-.102.67-.48 1.209-1.259 1.209-2.575 0-4.9-1.373-7.165-3.717-.117.353-.144.716-.14 1.397v.183c0 1.75.713 2.708 2.4 3.241l.6.19v.625c0 .758-.722 1.471-1.779 1.79.485.366 1.475.563 3.077.563h.86v.855c0 1.224-1.415 2.183-3.552 2.684.697.212 1.625.303 2.692.303 3.964 0 8.163-2.741 8.163-6.832V6.446c0-.25.073-.469.194-.695.048-.089.1-.173.165-.27l.093-.136.068-.136.33-.658c-.17-.032-.339-.067-.503-.104z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </a>
+                <a class="instagram" aria-label="scoopwhoop instagram" rel="noopener"
+                    href="https://www.instagram.com/scoopwhoop/" target="_blank">
+                    <svg width="20" height="20" fill="none">
+                        <path fill="#AFB1B2" fill-rule="evenodd"
+                            d="M13.333 1.667H6.667a5 5 0 00-5 5v6.666a5 5 0 005 5h6.666a5 5 0 005-5V6.666a5 5 0 00-5-5zm-10 5a3.333 3.333 0 013.334-3.334h6.666a3.333 3.333 0 013.334 3.333v6.667a3.333 3.333 0 01-3.334 3.333H6.667a3.333 3.333 0 01-3.334-3.333V6.666zm6.667 7.5a4.167 4.167 0 110-8.334 4.167 4.167 0 010 8.333zm0-1.667a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm5-6.667a.833.833 0 11-1.667 0 .833.833 0 011.667 0z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a class="footer-link" href="https://www.scoopwhoop.com/about/?ref=footer_links">About Us</a></li>
+                <li><a class="footer-link" href="https://www.scoopwhoop.com/contact/?ref=footer_links">Contact Us</a></li>
+                <li><a class="footer-link" href="https://recruiterflow.com/scoopwhoop/jobs" rel="noopener"
+                        target="_blank">Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <ul class="footer-link">
+                <li><a class="footer-link" href="https://www.scoopwhoop.com/advertise/?ref=footer_links">Advertise With
+                        Us</a></li>
+                <li><a class="footer-link" href="https://www.scoopwhoop.com/privacy-policy/?ref=footer_links">Privacy
+                        policy</a></li>
+                <li><a class="footer-link" href="/terms-and-conditions/?ref=footer_links">Terms and conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        function openMenuBar() {
+            document.getElementById('Menu').style.top = "0%";
+        }
+        function closeMenuBar() {
+            document.getElementById('Menu').style.top = "100%";
+        }
+    </script>
+</body>
+</html>
